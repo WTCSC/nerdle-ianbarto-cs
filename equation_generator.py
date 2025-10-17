@@ -1,3 +1,4 @@
+import random
 """
 equation_generator.py
 
@@ -15,15 +16,9 @@ For example: 12+34=46 or 8*7=56
 ###########################################
 
 def generate_numbers_for_addition():
-    """
-    Generate two numbers that when added create an 8-character equation.
-    Returns a tuple of (num1, num2, result)
-    
-    For addition, we want numbers that create 8 total characters
-    Format: NN+NN=NN (2+1+2+1+2 = 8 characters)
-
-    Example: (12, 34, 46) creates "12+34=46"
-    """
+    num1 = random.number = random.randint(10, 99)
+    num2 = random.number = random.randint(10, 99)
+    return(num1,num2, num1 + num2)
 
 def generate_numbers_for_subtraction():
     """
@@ -35,6 +30,9 @@ def generate_numbers_for_subtraction():
 
     Example: (56, 23, 33) creates "56-23=33"
     """
+    num1 = random.number = random.randint(51, 99)
+    num2 = random.number = random.randint(10, 50)
+    return(num1,num2, num1 - num2)
 
 def generate_numbers_for_multiplication():
     """
@@ -47,6 +45,9 @@ def generate_numbers_for_multiplication():
     
     Example: (3, 34, 102) creates "3*34=102" (8 characters)
     """
+    num1 = random.number = random.randint(1, 9)
+    num2 = random.number = random.randint(10, 99)
+    return(num1,num2, num1 * num2)
 
 def generate_numbers_for_division():
     """
@@ -60,6 +61,9 @@ def generate_numbers_for_division():
     Example: (252, 36, 7) creates "252/36=7"
     """
     
+    num1 = random.number = random.randint(1, 9)
+    num2 = random.number = random.randint(10, 99)
+    return(num1,num2, num1 / num2)
 ################################################################################
 #  DO NOT EDIT BELOW THIS LINE, THESE FUNCTIONS ARE ALREADY COMPLETED FOR YOU  #
 ################################################################################
