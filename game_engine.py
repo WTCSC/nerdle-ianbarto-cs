@@ -16,6 +16,15 @@ import equation_generator
 ###########################################
 
 def is_valid_guess(guess):
+    for character in guess:
+        if character not in get_valid_characters():
+            return False
+    
+    equals = True if guess.count("=") == 1 else False 
+    if len(guess) == 8 and equals:
+        return True
+    
+    
     """
     Check if a player's guess is valid for Nerdle.
     
@@ -33,6 +42,7 @@ def is_valid_guess(guess):
     Returns:
         bool: True if the guess is valid, False otherwise
     """
+
 
 ################################################################################
 #  DO NOT EDIT BELOW THIS LINE, THESE FUNCTIONS ARE ALREADY COMPLETED FOR YOU  #
